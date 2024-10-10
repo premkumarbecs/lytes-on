@@ -14,7 +14,7 @@ class WebhookController extends Controller
         $data = $request->all();
 
         // Log the incoming webhook data
-        Log::info('Webhook received: ', $data);
+        Log::info('Data received: ', $data);
 
         // Return a 200 OK response to acknowledge the webhook
         return response()->json(['status' => 'success'], 200);
